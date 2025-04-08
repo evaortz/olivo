@@ -14,10 +14,62 @@ body {
 .title-font {
     font-family: 'Gayathri', sans-serif;
 }
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5e5e7;
+}
+
+nav .brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 10px;
+    padding: 10px;
+}
+.active {
+    border-bottom: #f07860 3px solid;
+}
+nav li a:hover {
+    border-bottom: #f5e5e7 3px solid;
+}
+
+.log-in {
+    background-color: #e7f0a5;
+    padding: 10px 18px;
+    color: #332204;
+    border-radius: 8px;
+}
+
+.log-in:hover {
+background-color: #576121;
+color: #f5e5e7;
+border-bottom: none;
+}
 
 .header {
     text-align: center;
     padding: 20px;
+}
+
+.header h1 {
+    font-size: 6rem;
+    font-weight: 100;
 }
 
 .container {
@@ -82,7 +134,7 @@ body {
     }
   }
 .box {
-    background-color: #fff9d8;
+    background-color: #e7f0a5;
     color: #332204;
     min-height: 100px;
     border-radius: 10px;
@@ -109,13 +161,14 @@ body {
 }
 
 .event {
-    background-color: #a5c1ec;
+    background-color: #f07860;
+    color: #f5e5e7;
     padding: 6px;
     border-radius: 5px;
 }
 
 .event:hover {
-    background-color: #43546d;
+    background-color: #c85e49;
     color: #fff;
     transform: scale(1.05);
     transition: ease-in-out;
