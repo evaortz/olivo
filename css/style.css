@@ -61,6 +61,16 @@ body {
 .div29 { grid-area: 1 / 3 / 3 / 4; }
 .div30 { grid-area: 1 / 4 / 3 / 5; }
 
+@media (max-width: 768px) {
+    .parent {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto; 
+    }
+  
+    .parent > div {
+      grid-area: auto; 
+    }
+  }
 .box {
     background-color: #fff9d8;
     min-height: 100px;
