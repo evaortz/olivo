@@ -1,10 +1,4 @@
-:root[data-bs-theme="dark"] {
-    --bs-body-bg: #332204;
-    --bs-body-color: #f5e5e7;      
-    --bs-primary: #e7f0a5;         
-    --bs-secondary: #576121;
-    --bs-border-color: #f06870;
-}
+
 * {
     box-sizing: content-box;
     margin: 0;
@@ -12,9 +6,9 @@
 }
 
 body {
-    background-color: #332204;
     font-family: 'Manjari', sans-serif;
     color: #f5e5e7;
+    background-color: #332204;
 }
 
 .title-font {
@@ -84,6 +78,7 @@ body {
   }
 .box {
     background-color: #fff9d8;
+    color: #332204;
     min-height: 100px;
     border-radius: 10px;
     padding: 15px; position: relative;
