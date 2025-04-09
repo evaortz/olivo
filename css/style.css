@@ -18,6 +18,7 @@ nav {
     position: sticky;
     top: 0;
     display: flex;
+    z-index: 1000;
     justify-content: space-between;
     padding: 15px;
     align-items: center;
@@ -269,7 +270,7 @@ footer .logo {
     font-size: 0.9rem;
 }
 
-main {
+.container {
     width: 80%;
     margin: auto;
 }
@@ -307,4 +308,8 @@ main {
 
 .logo.light img {
     fill: #332204;
+}
+
+.mapa {
+    overflow: hidden;
 }
