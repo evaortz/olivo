@@ -15,10 +15,13 @@ body {
     font-family: 'Gayathri', sans-serif;
 }
 nav {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     padding: 15px;
     align-items: center;
+    background-color: #332204;
 }
 
 nav a {
@@ -178,8 +181,11 @@ border-bottom: none;
 footer {
     display: flex;
     justify-content: space-around;
-    min-height: 150px;
+    min-height: 50px;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 70px 20px 50px 20px; 
 }
 
 footer .logo {
@@ -189,7 +195,7 @@ footer .logo {
     font-size: 1.5rem;
 }
 
-.redes {
+.redes, .redes-light {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -203,6 +209,17 @@ footer .logo {
 
 .redes a:hover {
     color: #e7f0a5;
+}
+
+.redes-light a {
+    color: #332204;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.redes-light a:hover {
+    color: #576121;
   }
 
 .email-input {
@@ -212,17 +229,82 @@ footer .logo {
     border-radius: 8px;
     margin-right: 10px;
 }
-.suscribe-button {
+.suscribe-button, .button {
     background-color: #e7f0a5;
     padding: 6px 18px;
     color: #332204;
     border-radius: 8px;
     border: none;
     font-family: 'Manjari', sans-serif;
+    text-decoration: none;
 }
 
-.suscribe-button:hover {
+.suscribe-button, .button:hover {
     background-color: #576121;
     color: #f5e5e7;
     border-bottom: none;
+}
+
+.index-body{
+    background-color: #f5e5e7;
+    color: #332204;
+}
+
+.video-intro {
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-intro video {
+    object-fit: cover;
+    height: 50vh;
+}
+
+.video-intro p {
+    position: relative;
+    bottom: 30px;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 0.9rem;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.intro-article {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.intro-article-image {
+    background-color: aliceblue;
+    width: 300px;
+    height: 300px;
+}
+
+.intro-article-text p {
+    max-width: 60ch;
+}
+
+.intro-article-text h1 {
+    font-size: 3rem;
+}
+
+.call-to-action {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logo.light img {
+    fill: #332204;
 }
